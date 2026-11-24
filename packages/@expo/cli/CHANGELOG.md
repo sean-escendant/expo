@@ -1,5 +1,22 @@
 # Changelog
 
+## 58.1.22
+
+### Patch Changes
+
+- Detect Factory Droid, Grok Bot, Claude Cowork, and Muse in CLI telemetry. ([#53831](https://github.com/expo/expo/pull/53831) by [@davidmokos](https://github.com/davidmokos))
+- Fix `expo lint` and `expo run` failing right after installing a missing package. ([#53887](https://github.com/expo/expo/pull/53887) by [@ramonclaudio](https://github.com/ramonclaudio))
+- Treat non-boolean `CI` values, like `CI=yes`, as false instead of failing. ([#53019](https://github.com/expo/expo/pull/53019) by [@ramonclaudio](https://github.com/ramonclaudio))
+- [Internal] Include the parent CLI command in telemetry to distinguish nested command invocations. ([#53393](https://github.com/expo/expo/pull/53393) by [@davidmokos](https://github.com/davidmokos))
+- In `expo serve`, load exported CommonJS server modules independently of the project module type and improve error handling. ([#52851](https://github.com/expo/expo/pull/52851) by [@kitten](https://github.com/kitten))
+- Updated dependencies. ([#53238](https://github.com/expo/expo/pull/53238), [#52592](https://github.com/expo/expo/pull/52592))
+  - @expo/metro-file-map@58.0.7
+  - @expo/config-plugins@58.0.14
+  - @expo/config@58.0.13
+  - @expo/inline-modules@0.2.11
+  - @expo/prebuild-config@58.0.21
+  - @expo/metro-config@58.0.24
+
 ## 58.1.21
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # Changelog
 
+## 58.0.16
+
+### Patch Changes
+
+- [iOS] Fixed `clearStoredEntries` doing nothing. It now deletes the stored metrics, logs, spans, crash reports, and pending fatal errors, while sessions that are still running keep recording. ([#51003](https://github.com/expo/expo/pull/51003) by [@jiunshinn](https://github.com/jiunshinn))
+- [iOS] Fix the main session being marked inactive when the metrics database opened in a later second than the session started. ([#54066](https://github.com/expo/expo/pull/54066) by [@Ubax](https://github.com/Ubax))
+- Redact credentials and signed query parameters in the redirect URLs of network trace spans, the same as in `url.full`. ([#53688](https://github.com/expo/expo/pull/53688) by [@tsapeta](https://github.com/tsapeta))
+
 ## 58.0.15
 
 ### Patch Changes

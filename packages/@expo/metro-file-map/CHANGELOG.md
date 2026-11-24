@@ -1,5 +1,11 @@
 # Changelog
 
+## 58.0.7
+
+### Patch Changes
+
+- Process files synchronously in-band, as upstream `metro-file-map` does. This makes lazy SHA-1 computation and worker-thread crawls faster. For `unstable_fileMapPlugins` workers, `getContent()` returns a `Buffer` again rather than a promise, matching upstream. ([#53238](https://github.com/expo/expo/pull/53238) by [@robhogan](https://github.com/robhogan))
+
 ## 58.0.6
 
 ### Patch Changes

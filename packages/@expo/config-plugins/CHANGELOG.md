@@ -1,5 +1,11 @@
 # Changelog
 
+## 58.0.14
+
+### Patch Changes
+
+- Keep XML formatting from mutating Android string resources and adding extra escapes on repeated writes. ([#52592](https://github.com/expo/expo/pull/52592) by [@tedy69](https://github.com/tedy69))
+
 ## 58.0.13
 
 ### Patch Changes
